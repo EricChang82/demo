@@ -1,0 +1,1 @@
+FreeMaker测试。返回消息:${message}
