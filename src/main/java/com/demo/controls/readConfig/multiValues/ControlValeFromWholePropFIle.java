@@ -1,6 +1,6 @@
-package com.demo.readConfig.multiValues;
+package com.demo.controls.readConfig.multiValues;
 
-import com.demo.readConfig.readUdfProp.Person2;
+import com.demo.controls.readConfig.readUdfProp.Person2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

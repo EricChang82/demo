@@ -1,4 +1,4 @@
-package com.demo.readConfig.singleValues;
+package com.demo.controls.readConfig.singleValues;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;

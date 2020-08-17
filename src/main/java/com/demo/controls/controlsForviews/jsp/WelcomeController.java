@@ -1,4 +1,4 @@
-package com.demo.views.jsp;
+package com.demo.controls.controlsForviews.jsp;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

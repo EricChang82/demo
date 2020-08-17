@@ -1,4 +1,4 @@
-package com.demo.views.thymeleaf;
+package com.demo.controls.controlsForviews.thymeleaf;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
