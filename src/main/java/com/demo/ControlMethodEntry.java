@@ -1,4 +1,4 @@
-package com.demo.controls;
+package com.demo;
 
 import com.demo.log.log4jTest.Log4jTest;
 import org.springframework.web.bind.annotation.GetMapping;
