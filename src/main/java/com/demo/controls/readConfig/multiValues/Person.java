@@ -1,8 +1,6 @@
 package com.demo.controls.readConfig.multiValues;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
@@ -12,7 +10,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @ConfigurationProperties(prefix="person")  //prefix 必须为小写
-@Setter@Getter@ToString
+@Data  //相当于 @Setter@Getter@ToString
 public class Person {
     private String name;
     private String age;
