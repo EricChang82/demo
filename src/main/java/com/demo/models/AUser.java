@@ -2,9 +2,8 @@ package com.demo.models;
 
 import lombok.*;
 
-@Getter
-@Setter
-public class User {
+@Data
+public class AUser {
     private String name;
     private int age;
     private String pass;

@@ -1,6 +1,6 @@
 package com.demo.controls.basic;
 
-import com.demo.models.User;
+import com.demo.models.AUser;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,8 +17,8 @@ public class ControlReturnJson {
     @RequestMapping(name = "/getUser", method = RequestMethod.POST)
     //@RequestMapping(name="/getUser", method= RequestMethod.POST)，以 /getUser 的⽅方式去请求，
     //method= RequestMethod.POST 是指只可以使⽤用 Post 的⽅方式去请求，如果使⽤用 Get 的⽅方式去请求的话，则会报 405 不不允许访问的错误
-    public User getUser() {   //http://localhost:8080/getUser  TODO
-        User user = new User();
+    public AUser getUser() {   //http://localhost:8080/getUser  TODO
+        AUser user = new AUser();
         user.setName("⼩小明");
         user.setAge(12);
         user.setPass("123456");
