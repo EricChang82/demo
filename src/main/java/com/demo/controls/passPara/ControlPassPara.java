@@ -27,5 +27,12 @@ public class ControlPassPara {
     public String showMessage2(@PathVariable("message") String msg){
         return "showMessage2--消息为："+msg;
     }
+    /**
+     * 路径参数方式
+     */
+    @RequestMapping(value="/showMessage/{message}/msg2/{message2}",method = RequestMethod.GET) //http://localhost:8080/showMessage/天晴了/msg2/开始
+    public String showMessage3(@PathVariable("message") String msg,@PathVariable("message2") String msg2){
+        return "showMessage3--消息1为："+msg+"showMessage3--消息2为："+msg2;
+    }
 
 }
