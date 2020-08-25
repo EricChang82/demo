@@ -1,8 +1,6 @@
 package com.demo.controls.readConfig.readUdfProp;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
@@ -14,7 +12,7 @@ import org.springframework.stereotype.Component;
 @Component
 @PropertySource(value = "classpath:other.properties") //指定其他配置文件。
 @ConfigurationProperties(prefix="otherperson")  //prefix 必须为小写
-@Setter@Getter@ToString
+@Data
 public class Person2 {
     private String name;
     private String age;

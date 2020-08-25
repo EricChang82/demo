@@ -12,12 +12,13 @@ public class UserRepositoryImpl {
     @Autowired
     public MongoTemplate mongoTemplate;
 
-    public void saveUser(AUser user,String collectionName) {
-        mongoTemplate.save(user,collectionName);
+    public void saveUser(AUser user, String collectionName) {
+        mongoTemplate.save(user, collectionName);
     }
-    public AUser findUserByUserName(String userName,String collectionName) {
+
+    public AUser findUserByUserName(String userName, String collectionName) {
         Query query = new Query(Criteria.where("name").is(userName));
-        AUser user = mongoTemplate.findOne(query, AUser.class,collectionName);
+        AUser user = mongoTemplate.findOne(query, AUser.class, collectionName);
         return user;
     }
 }

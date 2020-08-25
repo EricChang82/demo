@@ -124,6 +124,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
         <!-- druid数据库连接 END -->
         <!-- —————————————————————————— 非starter 单的的依赖 END -—————————————————————————— -->
     </dependencies>
