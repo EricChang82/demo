@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * 传参到方法中读取,get方式
+ * get方式获取传递参数值
  */
 @RestController
-public class ControlPassParaGet {
+public class RestControlPassParaGet {
 
     /**
      * 地址方式
