@@ -15,10 +15,10 @@ public class ControlMongoTemplate {
     public UserRepositoryImpl userRepositoryImpl;
 
     @RequestMapping("/saveUser")  //http://localhost:8080/saveUser
-    public String saveUser() {
+    public String saveUser(String name ,int age) {
         AUser user = new AUser();
-        user.setName("张三");
-        user.setAge(12);
+        user.setName(name);
+        user.setAge(age);
         userRepositoryImpl.saveUser(user,"userInfo");
         return "保存成功";
     }
