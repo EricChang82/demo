@@ -14,8 +14,8 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 public class WebConfiguration {
-
     @Bean
+//    Spring的@Bean注解用于告诉方法，产生一个Bean对象，然后这个Bean对象交给Spring管理。产生这个Bean对象的方法Spring只会调用一次，随后这个Spring将会将这个Bean对象放在自己的IOC容器中。
     public FilterRegistrationBean testFilterRegistration() {
         FilterRegistrationBean registration = new FilterRegistrationBean();
         registration.setFilter(new MyFilter());
@@ -24,6 +24,7 @@ public class WebConfiguration {
         registration.setOrder(6);   //Order 值越⼩小优先级越⾼高
         return registration;
     }
+
     @Bean
     public FilterRegistrationBean test2FilterRegistration() {
         FilterRegistrationBean registration = new FilterRegistrationBean();

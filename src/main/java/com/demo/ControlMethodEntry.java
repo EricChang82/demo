@@ -1,6 +1,6 @@
 package com.demo;
 
-import com.demo.log.log4jTest.Log4jTest;
+import com.demo.log.Log4jTest;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
